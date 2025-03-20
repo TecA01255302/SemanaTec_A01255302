@@ -42,3 +42,13 @@ def convolution(image, kernel):
     plt.show()
  
     return output
+
+
+k = np.array([[-1, -1, -1],
+              [-1, 8, -1],
+              [-1, -1, -1]])
+
+
+#ruta = r"C:\Users\arace\Desktop\Araceli Escuela\TEC\SEMESTRE 4\SemanaTEC\Laboratorio\semena-tec-tools-vision\Images\canicas.png"
+#img = cv2.imread(ruta, cv2.IMREAD_ANYCOLOR)
+#convolution(img,k)
