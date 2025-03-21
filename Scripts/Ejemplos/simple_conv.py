@@ -69,6 +69,3 @@ img = np.array([ [0,0,0,0,0,0,0],
     ])
 
 convolution(img,k)
-#ruta = r"C:\Users\arace\Desktop\Araceli Escuela\TEC\SEMESTRE 4\SemanaTEC\Laboratorio\semena-tec-tools-vision\Images\canicas.png"
-#img = cv2.imread(ruta, cv2.IMREAD_ANYCOLOR)
-#convolution(img,k)

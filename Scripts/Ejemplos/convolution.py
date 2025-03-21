@@ -56,14 +56,14 @@ def convolution(image, kernel, average=False, verbose=False):
  
     return output
 
-"""k = np.array([[-1, -1, -1],
+k = np.array([[-1, -1, -1],
               [-1, 8, -1],
-              [-1, -1, -1]])"""
+              [-1, -1, -1]])
 
 #Gaussian blur (badly done)
-k = np.array([[1,2,1],
+"""k = np.array([[1,2,1],
               [2,4,2],
-              [1,2,1]])
+              [1,2,1]])"""
 
 ruta = r"C:\Users\arace\Desktop\Araceli Escuela\TEC\SEMESTRE 4\SemanaTEC\Laboratorio\semena-tec-tools-vision\Images\canicas.png"
 image = cv2.imread(ruta)
