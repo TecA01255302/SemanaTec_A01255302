@@ -43,12 +43,32 @@ def convolution(image, kernel):
  
     return output
 
+"""
+k = np.array([[-1, -2, -1],
+              [0, 0, 0],
+              [1, 2, 1]])
 
-k = np.array([[-1, -1, -1],
-              [-1, 8, -1],
-              [-1, -1, -1]])
+img = np.array([ [10,20,30,40,50],
+                 [15,25,35,45,55],
+                 [20,30,40,50,60],
+                 [25,35,45,55,65],
+                 [30,40,50,60,70]
+    ])"""
 
+k = np.array([[1, 1, 1],
+              [0, 1, 4],
+              [3, 1, 2]])
 
+img = np.array([ [0,0,0,0,0,0,0],
+                 [0,2,4,1,5,4,0],
+                 [0,5,1,3,3,6,0],
+                 [0,6,4,4,7,3,0],
+                 [0,8,7,3,7,0,0],
+                 [0,6,8,6,8,4,0],
+                 [0,0,0,0,0,0,0]
+    ])
+
+convolution(img,k)
 #ruta = r"C:\Users\arace\Desktop\Araceli Escuela\TEC\SEMESTRE 4\SemanaTEC\Laboratorio\semena-tec-tools-vision\Images\canicas.png"
 #img = cv2.imread(ruta, cv2.IMREAD_ANYCOLOR)
 #convolution(img,k)
