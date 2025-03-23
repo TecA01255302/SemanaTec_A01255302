@@ -43,6 +43,11 @@ k = np.array([[-1, -1, -1],
               [-1, -1, -1]])
 
 
+#Edge detection horizontal
+k2 = np.array([[-1, 0, -1],
+              [-1, 0, -1],
+              [-1, 0, -1]])
+
 
 ruta = r"C:\Users\arace\Desktop\Araceli Escuela\TEC\SEMESTRE 4\SemanaTEC\Laboratorio\semena-tec-tools-vision\Images\canicas.png"
 image = cv2.imread(ruta, cv2.IMREAD_GRAYSCALE)
