@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 
 def miConv(img, kernel):
-    h_img, w_img = img.shape #Se
+    h_img, w_img = img.shape 
     h_ker, w_ker = kernel.shape
     
     res = np.ones((h_img-h_ker+1,w_img-w_ker+1))

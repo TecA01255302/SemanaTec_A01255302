@@ -1,5 +1,0 @@
--Comentar convulación simple
-
--crear propia convulación con padding individual
-
--tener las imágenes en el repositorio
