@@ -12,22 +12,24 @@ import matplotlib.pyplot as plt
 
 
 def miConv(img, kernel):
-    h_img, w_img = img.shape 
-    h_ker, w_ker = kernel.shape
+    h_img, w_img = img.shape #Alto y Ancho de la Imágen
+    h_ker, w_ker = kernel.shape #Alto y Ancho del Kernel
     
-    res = np.ones((h_img-h_ker+1,w_img-w_ker+1))
+    res = np.ones((h_img-h_ker+1,w_img-w_ker+1)) #Se crea una matriz de salida
     
+    #Dentro de la iteración con "i" y "j", se va seleccionado cada elemento de la matriz de salida
     for i in range(h_img - h_ker + 1):
         for j in range(w_img - w_ker + 1):
             sumador = 0
+            #Dentro de la iteración "x" y "y" se aplica la operación donde te da la suma del producto de matrices
             for x in range(h_ker):
                 for y in range(w_ker):
-                    sumador += img[i+x, j+y]*kernel[h_ker-1-x, w_ker-1-y]
+                    sumador += img[i+x, j+y]*kernel[h_ker-1-x, w_ker-1-y] 
             res[i, j] = sumador
             
-    plt.imshow(res, cmap='gray')
+    plt.imshow(res, cmap='gray') #Grafica la matriz de salida en escala de grises
     plt.title("Output Image Using Kernel")
-    plt.show()
+    plt.show()#Muestra la gráfica
     return res
 
 
